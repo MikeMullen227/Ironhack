@@ -19,14 +19,15 @@ class Game
 
 directions = [N, S, E, W]
 
-
+	end
+end
 
 class Room
 	def initialize (exit_location, description, message, item)
 		@exit_location = exit_location
 		@description = description
 		@message = message
-		@item = item
+		
 	end
 
 
@@ -40,8 +41,8 @@ end
 
 
 
-bedroom = Room.new("There is a door to the North.", "You are laying on a bed and a fan is blowing.", "There is no exit.", "You see a glass of Water")
-living_room = Room.new("There is a door to the East.", "You see a table and chairs.", "There is no exit.", "You see a book.")
-library= Room.new("There is a door to North.", "You see shelves full of books.", "There is no exit.", "You see a gun.")
-kitchen = Room.new("There is a door to the west.", "Pots and pans are all around.", "There is no exit.", "You see a rose.")
-yard = Room.new("There are no doors.", "You are in the Yard.", "There is no exit.", "You see an old woman before you.")
+bedroom = Room.new("There is a door to the North.", "You are laying on a bed and a fan is blowing.", "There is no exit.")
+living_room = Room.new("There is a door to the East.", "You see a table and chairs.", "There is no exit.")
+library= Room.new("There is a door to North.", "You see shelves full of books.", "There is no exit.")
+kitchen = Room.new("There is a door to the west.", "Pots and pans are all around.", "There is no exit.")
+yard = Room.new("There are no doors.", "You are in the Yard.", "There is no exit.")
