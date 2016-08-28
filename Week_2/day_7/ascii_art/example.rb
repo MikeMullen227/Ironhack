@@ -17,7 +17,7 @@ end
 
 
 
-
+#get "ascii/:word/?:optional_font?" do
 
 
 get "/ascii/:word" do

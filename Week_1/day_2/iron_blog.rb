@@ -38,7 +38,7 @@ class Post
 		@title = title
 		@date = date
 		@text = text
-	end
+
 
 
 

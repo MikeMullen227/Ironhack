@@ -1,0 +1,22 @@
+<link rel = "stylesheet" href = "/styles.css">
+
+
+
+<h1>Movies</h1>
+
+<p>Showing<strong> <%= @movies.length %> </strong>results.</p>
+
+
+
+<p>Which movie was released in year <strong><%= @random_movie_year %></strong></p>
+
+
+<% @movies.each do |the_movie| %>
+
+<% if the_movie == @random_movie %>
+	<img src="<%= the_movie.poster %>" onClick ="alert('yay')" />
+<% else %>
+	<img src="<%= the_movie.poster %>" onClick ="alert('nay')" /> 
+<% end %>
+
+<% end %>

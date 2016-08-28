@@ -7,10 +7,10 @@ RSpec.describe Task do
 
 
 	describe "id" do
-		it "gives the id number of the task" do
+		
 			task = Task.new("Buy the milk")
             task2 = Task.new("Wash the car")
-
+        it "gives the id number of the task" do
 
 			expect(task.id).to eq(1)
 			expect(task2.id).to eq(2)
@@ -51,10 +51,10 @@ RSpec.describe Task do
 		
 		end
 	end
-	describe "updated content" do
+	describe "updated_content" do
 			task = Task.new("Buy the milk")
             task2 = Task.new("Wash the car")
-		it "tells you when the task was created" do
+		it "updates the to the right content if the wrong one was entered" do
 			expect(task.update_content!("Buy some orange juice")).to eq("Buy some orange juice")
 			expect(task2.update_content!("Wash the dishes")).to eq("Wash the dishes")
 		

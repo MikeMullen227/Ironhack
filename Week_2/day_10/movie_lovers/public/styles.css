@@ -1,0 +1,14 @@
+img {
+  width: 200px;
+  height: 200px;
+  float: left;
+
+}
+
+/* Every 3 elements        starting with the 3rd
+   -------------     ---------------------------
+              ||     |
+              --     -              */
+img:nth-child(3n + 1) {
+  clear: left;
+}	
