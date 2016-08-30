@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url(fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+	font-family: 'Proxima Nova-Sbold';
+	src: url(fonts/ProximaNova-Light.otf);
+}
+
+.background_image {
+	background: url("images/family.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;
+	width: 100%;
+}
+
+.logo_container{
+	display: inline-block;
+}
+
+.sign_in_button {
+	display: inline-block;
+	float: right;
+
+}
+
+.netflix_header {
+	width: 275px;
+	height: 135px;
+	margin-left: 25px;
+	margin-top: -10px;
+
+}
+
+.sign_in {
+    background-color: red;
+    color: #fff;
+    margin: 20px 32px;
+    font-family: 'Proxima Nova';
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 8px 42px;
+    border: 0;
+    box-shadow: none;
+}
+
+
+.center_image {
+    /*text-align: center;*/
+    font-size: 40px;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 30px 157px;
+    position: absolute;
+    top: 200px;
+    left: 246px;
+    font-family: 'Proxima Nova-Sbold';
+   background: rgba(0, 0, 0, 0.5); 
+}
+
+.center_image p {
+	color: #fff;
+	margin: 5px;
+	opacity: 1;
+	}
+
+.start {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+    background-color: blue;
+    color: #fff;
+    border: 0;
+    box-shadow: none;
+    width: 178px;
+    height: 44px;
+    font-size: 15px;
+}
+
+.movies {
+    color: black;
+    background-color: white;
+    padding-left: 50px;
+    margin-top: 400px;
+}
+
+.movie {
+	width: 200px;
+    height: 250px;
+}
+}
