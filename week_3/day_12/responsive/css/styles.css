@@ -1,0 +1,28 @@
+#header-image {
+	background-image: url('../images/banana.jpeg');
+	background-repeat: no-repeat;
+	height: 700px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	#header-image {
+		background-image:url('../images/orange.png');
+		height: 700px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#header-image {
+		background-image:url('../images/apple.jpeg');
+		height: 700px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#header-image {
+		background-image:url('../images/strawberry.jpeg');
+		height: 700px;
+	}
+}
