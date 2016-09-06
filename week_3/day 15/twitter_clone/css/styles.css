@@ -1,0 +1,153 @@
+
+ul {
+  list-style-type:none;
+}
+li {
+  display: inline;
+  /*float: left;
+*/}
+
+.navigation-left li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navigation-left {
+	margin: 14px;
+	padding-left: 110px
+}
+
+.twitter_image {
+	display: block;
+	margin-left: 85px;
+	/*margin-right: auto;*/
+	margin-top: 8px;
+	width: 30px;
+	height: 30px;	
+}
+
+.search {
+	/*width: 200px;
+	height: 40px;*/
+	/*display: block;
+    -moz-box-sizing: border-box;*/
+   /* box-sizing: border-box;*/
+    width: 200px;
+    height: 32px;
+  /*  padding: 5px 27px 6px 12px;*/
+    font-size: 12px;
+    /*line-height: 1;*/
+    color: #292f33;
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 21px;
+    transition: all .2s ease-in-out;
+}
+
+
+
+.right-inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+
+.right-inner-addon .glyphicon { 
+	position: relative;
+	right: 25px;
+}
+
+/* add padding  */
+
+.right-addon input { 
+	padding-left: 30px; 
+}
+
+.img-rounded {
+	position: relative;
+	width: 32px;
+	height: 32px;
+	color: ;
+}
+
+.right-inner-addon .btn {
+	width:90px;
+	margin-left: 10px;
+	background-color: #009999;
+    background: rgba(0,153,153,.8);
+    color: white;
+}
+
+.dry-tortugas {
+	width: 100%;
+	height: 325px;
+
+}
+
+.banner {
+	display: block;
+	padding: 0px;
+}
+
+.profile-avatar {
+    bottom: -87px;
+    left: 80px;
+    position: absolute;
+    transition: bottom .3s;
+    z-index: 3;
+}
+.avatar {
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+    height: 210px;
+    position: relative;
+    width: 210px;
+}
+.ProfileAvatar-image {
+	height: 200px;	
+	width: 200px;
+}
+
+.profile-nav-list {
+
+    height: 60px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 0 solid;
+    display: block;
+    line-height: 1;
+    padding: 14px 15px 7px;
+    transition: all .15s ease-in-out;
+}
+
+.profile-nav-item {
+	display: inline-block;
+	margin-right:20px;
+}
+
+.tweets-following-top {
+	font-size: 11px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out;
+    margin: 7px;
+    text-align: center;
+}
+
+.tweets-following-bottom {
+	font-size: 18px;
+    
+    font-weight: 500;
+    transition: color .15s ease-in-out;
+    text-align: center;
+    color:#009999;
+}
+

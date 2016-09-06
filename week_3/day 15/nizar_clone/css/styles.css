@@ -1,0 +1,28 @@
+/*.col-xs-4,
+.col-xs-9,
+.col-xs-8,
+.col-xs-12,
+.col-xs-6,
+.col-xs-3 {
+  border: 1px dotted black;
+}
+/*x1*/
+/*html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}*/
+
+
+ul {
+  list-style-type:none;
+}
+li {
+  display: inline;
+  float: left;
+}
+
