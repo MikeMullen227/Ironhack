@@ -124,7 +124,7 @@ li {
     border-bottom: 0 solid;
     display: block;
     line-height: 1;
-    padding: 14px 15px 7px;
+    padding: 6px;
     transition: all .15s ease-in-out;
 }
 
@@ -151,3 +151,30 @@ li {
     color:#009999;
 }
 
+.follow {
+	margin-top: 12px;
+    margin-bottom: 8px;
+    margin-left:130px;
+    padding: 4px 12px 9px 12px;
+    color: #292f33;
+}
+
+.glyphicon-cog {
+    left: 115px;
+    font-size: 20px;
+    top: 8px;
+}
+
+.glyphicon-user {
+	 color: #1da1f2;
+	 padding-right: 5px;
+}
+
+.center-navbar {
+	background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 60px;
+}
+}
