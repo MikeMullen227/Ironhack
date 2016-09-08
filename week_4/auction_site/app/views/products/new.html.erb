@@ -1,0 +1,18 @@
+	<h1>Add a Product</h1>
+
+
+<%= form_for [@project, @time_entry] do |f| %>
+	<%= f.label :name %>
+	<%= f.label :hours %>	
+<br>
+
+	<%= f.label :minutes %>
+	<%= f.text_field :minutes %>
+<br>
+
+	<%= f.label :date %>
+	<%= f.date_field :date %>
+<br>
+
+	<%= f.submit "Save" %>
+<% end %>
