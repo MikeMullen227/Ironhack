@@ -7,7 +7,7 @@ class ProjectsController < ApplicationController
 
 	def show
 		# display a single project from an id
-		@project = Project.find_by(id: params[:index])
+		@project = Project.find_by(id: params[:id])
 
 		# if ! @project same thing
 		unless @project
