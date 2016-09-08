@@ -4,4 +4,14 @@ class ProjectsController < ApplicationController
 				.limit(10)
 		render 'index'
 	end
+
+	def show
+		# display a single project from an id
+		@project = Project.find_by(id: params[:index])
+
+		# if ! @project same thing
+		unless @project
+			render 'no_projects_found'
+		end
+	end
 end
