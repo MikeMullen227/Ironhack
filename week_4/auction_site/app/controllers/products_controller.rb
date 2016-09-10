@@ -25,8 +25,9 @@ class ProductsController < ApplicationController
 			description: params[:product][:description]
 			deadline: params[:product][:deadline]
 		)
-		project.save
+		@product.save
 
+		redirect_to "/products/#{@product.id}"
 		render 'create'
 	end
 
