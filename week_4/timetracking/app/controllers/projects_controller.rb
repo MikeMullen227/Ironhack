@@ -26,9 +26,12 @@ class ProjectsController < ApplicationController
 		description: params[:project][:description]
 	)
 
-		project.save
-
-		redirect_to "/projects/#{project.id}"
+		if project.save
+			redirect_to "/projects/#{project.id}"
+		else 
+			@project = project 
+			render "new"
+		end
 	end
 
 end

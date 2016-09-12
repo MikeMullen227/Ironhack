@@ -21,9 +21,9 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
-		def destroy
-			
-		end
+	def destroy
+		
+	end
 end
 
 

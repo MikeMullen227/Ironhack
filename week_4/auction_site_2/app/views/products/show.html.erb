@@ -1,0 +1,35 @@
+<h1>Details for <%= @product.title %></h1>
+<ul>
+	<li>Description: <%= @product.description %></li>
+	<li>Deadline: <%= @product.deadline %></li>
+	
+</ul>
+
+
+<h1>Make a new bid on the item: </h1>
+
+<%= form_for @bids do |f| %>
+	<%= f.label :email%>
+	<%= f.text_field :email %>
+	<br>
+
+	<%= f.label :amount %>
+	<%= f.text_area :amount %>
+
+	<br>
+
+	<%= f.submit%>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+		

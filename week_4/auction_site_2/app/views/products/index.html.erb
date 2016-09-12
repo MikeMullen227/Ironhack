@@ -1,16 +1,17 @@
-<h1>Auction Site</h1>
+<h1>Products</h1>
 
 <ul>
 <% @products.each do |product| %>
 	<li>
-		<%= product.title %>
+		<%= link_to product.title,user_products_show_path(user_id = product.user_id, id = product.id) %>
 		<%= product.description %>
 		<%= product.deadline %>
-
 	</li>	
+
 
 <% end %>
 </ul>
+
 
 
 

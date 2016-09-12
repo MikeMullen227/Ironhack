@@ -1,10 +1,15 @@
 class ConcertsController < ApplicationController
 
 
-	def index
+	def home
 		@concerts = Concert.where("date >= ?", Time.now).where("date <= ?", Time.now.end_of_day)
+		@concerts_later = Concert.where("date >= ?", Time.now.end_of_day).where("date <= ?", Time.now.end_of_month)
 	end
 
+	def index
+		@concerts = Concert.all
+		
+	end
 	def new
 		@concert = Concert.new
 		
@@ -17,8 +22,10 @@ class ConcertsController < ApplicationController
 			venue: params[:concert][:venue],
 			date: params[:concert][:date],
 			price: params[:concert][:price],
-			description: params[:concert][:description],
+			description: params[:concert][:description]
 			)
+
+
 
         
         if @concert.save
@@ -34,7 +41,9 @@ class ConcertsController < ApplicationController
 	def show
 			# display a single project from an id
 		@concert = Concert.find_by(id: params[:id])
-		render 'show'
+		@comments = @concert.comments
+		@new_comment = @concert.comments.new
+		
 
 		# if ! @project same thing
 		# unless @concert

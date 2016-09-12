@@ -1,12 +1,15 @@
-<h2>Get Ready to Rock! Todays concerts: </h2>
+<h2>All concerts this month: </h2>
 <ul>
 	
 <% @concerts.each do |concert| %>
-	
+
 	<li><%= link_to "#{concert.artist}", concert_path(concert) %></li>
 <% end %>
 
 </ul>
 
+<%= link_to 'Add a new concert!', new_concert_path %>
+<br>
+</br>
 
 <footer>Copyright Mike Mullen</footer>

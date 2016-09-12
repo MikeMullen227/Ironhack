@@ -6,3 +6,23 @@
 	<li><%= @concert.price %></li>
 	<li><%= @concert.description %></li>
 </ul>
+
+<h1>Comments</h1>
+<% if @comments %>
+<% @comments.each do |x| %>
+	<%= x.name %>
+	<%= x.comment %>
+	<%end%>
+<%end%>
+<br>
+</br>
+
+<%= form_for [@concert, @new_comment] do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	
+	<%= f.label :comment %>
+	<%= f.text_field :comment %>
+
+	<%= f.submit %>
+	<% end %>
