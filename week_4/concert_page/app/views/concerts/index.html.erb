@@ -1,0 +1,12 @@
+<h2>Get Ready to Rock! Todays concerts: </h2>
+<ul>
+	
+<% @concerts.each do |concert| %>
+	
+	<li><%= link_to "#{concert.artist}", concert_path(concert) %></li>
+<% end %>
+
+</ul>
+
+
+<footer>Copyright Mike Mullen</footer>
