@@ -42,7 +42,7 @@ function showArtist(response){
 			
 		</li>
 		<li>
-			<button class="js-album-search" data-lost="${theArtist.id}" src="${theArtist.name}"> some text</button>
+			<button class="js-album-search" data-lost="${theArtist.id}" src="${theArtist.name}"> Show Albums </button>
 		</li>	
 		<ul class="js-album-list"></ul>
 		`;
